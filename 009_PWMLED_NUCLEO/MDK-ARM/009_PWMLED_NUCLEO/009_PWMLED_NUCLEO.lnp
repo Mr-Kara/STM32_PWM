@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"009_pwmled_nucleo\startup_stm32f401xe.o"
+"009_pwmled_nucleo\main.o"
+"009_pwmled_nucleo\gpio.o"
+"009_pwmled_nucleo\tim.o"
+"009_pwmled_nucleo\stm32f4xx_it.o"
+"009_pwmled_nucleo\stm32f4xx_hal_msp.o"
+"009_pwmled_nucleo\stm32f4xx_hal_tim.o"
+"009_pwmled_nucleo\stm32f4xx_hal_tim_ex.o"
+"009_pwmled_nucleo\stm32f4xx_hal_rcc.o"
+"009_pwmled_nucleo\stm32f4xx_hal_rcc_ex.o"
+"009_pwmled_nucleo\stm32f4xx_hal_flash.o"
+"009_pwmled_nucleo\stm32f4xx_hal_flash_ex.o"
+"009_pwmled_nucleo\stm32f4xx_hal_flash_ramfunc.o"
+"009_pwmled_nucleo\stm32f4xx_hal_gpio.o"
+"009_pwmled_nucleo\stm32f4xx_hal_dma_ex.o"
+"009_pwmled_nucleo\stm32f4xx_hal_dma.o"
+"009_pwmled_nucleo\stm32f4xx_hal_pwr.o"
+"009_pwmled_nucleo\stm32f4xx_hal_pwr_ex.o"
+"009_pwmled_nucleo\stm32f4xx_hal_cortex.o"
+"009_pwmled_nucleo\stm32f4xx_hal.o"
+"009_pwmled_nucleo\stm32f4xx_hal_exti.o"
+"009_pwmled_nucleo\system_stm32f4xx.o"
+--strict --scatter "009_PWMLED_NUCLEO\009_PWMLED_NUCLEO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "009_PWMLED_NUCLEO.map" -o 009_PWMLED_NUCLEO\009_PWMLED_NUCLEO.axf
